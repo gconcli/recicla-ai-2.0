@@ -1,14 +1,15 @@
-import Pagina from "./components/Paginas";
+import Pagina from "./components/pages/Paginas";
 import { useState } from "react";
 
 function App() {
+
   const [paginaAtual, setPaginaAtual] = useState({nome: 'Home', id: 1});
 
-  const handleChange = (event) => {
-    const nome = event.target.name;
-    const valor = event.target.value;
-    setInputs(valores => ({...valores, [nome]: valor}));
-}
+  const changePagina = (event) => {
+      const nome = event.target.name;
+      const valor = event.target.value;
+      setInputs(valores => ({...valores, [nome]: valor}));
+  }
 
   return (
     <>
