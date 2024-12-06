@@ -17,49 +17,49 @@ function Pagina({nome = "Home", id = 1}) {
     switch(id) {
         case 1: {
             return (
-
+                <Home />
             );
             break;
         }
         case 2: {
             return (
-                
+                <Sessao />
             );
             break;
         }
         case 3: {
             return (
-                
+                <OQue />
             );
             break;
         }
         case 4: {
             return (
-                
+                <PorQue />
             );
             break;
         }
         case 5: {
             return (
-                
+                <ComoEOnde />
             );
             break;
         }
         case 6: {
             return (
-                
+                <SobreNos />
             );
             break;
         }
         case 7: {
             return (
-                
+                <Entrar />
             );
             break;
         }
         case 8: {
             return (
-                
+                <RecuperarSenha />
             );
             break;
         }
