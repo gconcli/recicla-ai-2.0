@@ -10,59 +10,20 @@ import Entrar from "./Paginas.Entrar";
 import RecuperarSenha from "./Paginas.RecuperarSenha";
 
 
-function Pagina({nome = "Home", id = 1}) {
+function Pagina({nome = "Recicla Aí - Home", id = 1}) {
 
-    useEffect(() => {document.title = nome}, []);
+    useEffect(() => {document.title = nome;});
 
     switch(id) {
-        case 1: {
-            return (
-                <Home />
-            );
-            break;
-        }
-        case 2: {
-            return (
-                <Sessao />
-            );
-            break;
-        }
-        case 3: {
-            return (
-                <OQue />
-            );
-            break;
-        }
-        case 4: {
-            return (
-                <PorQue />
-            );
-            break;
-        }
-        case 5: {
-            return (
-                <ComoEOnde />
-            );
-            break;
-        }
-        case 6: {
-            return (
-                <SobreNos />
-            );
-            break;
-        }
-        case 7: {
-            return (
-                <Entrar />
-            );
-            break;
-        }
-        case 8: {
-            return (
-                <RecuperarSenha />
-            );
-            break;
-        }
+        case 1: return (<> <Home /> </>);
+        case 2: return (<> <Sessao /> </>);
+        case 3: return (<> <OQue /> </>);
+        case 4: return (<> <PorQue /> </>);
+        case 5: return (<> <ComoEOnde /> </>);
+        case 6: return (<> <SobreNos /> </>);
+        case 7: return (<> <Entrar /> </>);
+        case 8: return (<> <RecuperarSenha /> </>);
+        default: break;
     }
 }
 

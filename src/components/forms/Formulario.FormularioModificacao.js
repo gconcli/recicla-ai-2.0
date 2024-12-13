@@ -3,7 +3,7 @@ import { useState } from 'react';
 /*
  * Cria e retorna um formulário HTML, além de lidar com o tratamento dos dados digitados.
  */
-function FormularioCadastro() {
+function FormularioModificacao() {
 
     /**
      * Constante que guarda os dados digitados no formulário.
@@ -27,7 +27,7 @@ function FormularioCadastro() {
             Login: ${inputs.login || ""}
             Senha: ${inputs.senha || ""}
 
-            Você deseja realizar o seu cadastro com os
+            Você deseja modificar os seus dados com os
             dados informados acima?
             `;
             
@@ -69,7 +69,9 @@ function FormularioCadastro() {
 
                 <input type="text" placeholder="Crie um nome de Login" name="login" value={inputs.login || ""} onChange={handleChange}></input>
 
-                <input type="password" placeholder="Crie uma Senha" name="senha" value={inputs.senha || ""} onChange={handleChange}></input>
+                <input type="password" placeholder="Digite a sua Senha Atual" name="senhaA" value={inputs.senhaA || ""} onChange={handleChange}></input>
+
+                <input type="password" placeholder="Crie uma Senha Nova" name="senha" value={inputs.senha || ""} onChange={handleChange}></input>
 
                 <input type="password" placeholder="Confirme a sua Senha" name="senhaC" value={inputs.senhaC || ""} onChange={handleChange}></input>
 
@@ -80,4 +82,4 @@ function FormularioCadastro() {
     );
 }
 
-export default FormularioCadastro;
+export default FormularioModificacao;

@@ -20,8 +20,7 @@ function FormularioRecuperacao() {
         event.preventDefault();
 
         let mensagemConfirmacao = `
-            Login: ${inputs.usuario || ""}
-            Senha: ${inputs.senha || ""}
+            E-mail: ${inputs.email || ""}
 
             Você deseja receber a sua senha atual no e-mail informado acima?
         `;

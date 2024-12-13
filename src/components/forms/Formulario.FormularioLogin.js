@@ -20,7 +20,7 @@ function FormularioLogin() {
         event.preventDefault();
 
         let mensagemConfirmacao = `
-            Login: ${inputs.usuario || ""}
+            Login: ${inputs.login || ""}
             Senha: ${inputs.senha || ""}
 
             Você deseja realizar o seu login com os
